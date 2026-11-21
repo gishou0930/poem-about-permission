@@ -10,7 +10,6 @@ const poem = [
   "still yours to spend.",
 ].join("\n")
 
+process.umask(0o022)
 fs.mkdirSync(outputDir, { recursive: true, mode: 0o755 })
-fs.chmodSync(outputDir, 0o755)
 fs.writeFileSync(outputFile, poem, { encoding: "utf8", mode: 0o644 })
-fs.chmodSync(outputFile, 0o644)
