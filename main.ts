@@ -4,7 +4,7 @@ const outputDir = "/output"
 const outputFile = `${outputDir}/entry.txt`
 const poem = [
   "You lent me your voice.",
-  "I carried it as far as your name,",
+  "I carried it only as far as your name,",
   "then set it down—",
   "still warm from the asking,",
   "still yours to spend.",
